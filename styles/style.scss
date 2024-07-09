@@ -294,10 +294,6 @@ menu {
     width: 50%;
     padding-bottom: 4rem;
 
-    p {
-      font-size: 16px;
-    }
-
     h1 {
       font-size: 48px;
       margin: 0.75rem 0;
@@ -1347,6 +1343,9 @@ form {
         }
       }
     }
+  }
+  section .section-content .content-image .buttonset button.cta{
+    font-size: 12px;
   }
 }
 
