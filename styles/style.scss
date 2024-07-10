@@ -117,7 +117,7 @@ img {
 }
 
 input:focus,
-textarea:focus {
+input {
   outline-width: 0;
   color: white;
 }
@@ -1131,6 +1131,7 @@ form {
 
   #preview .preview-content {
     width: 100%;
+    padding-bottom: 2.3rem;
   }
 
   #types {
@@ -1247,8 +1248,15 @@ form {
       }
     }
   }
-  section p.b-text {
-    font-size: 16px;
+  section {
+    padding: 2.3rem 1rem 0 1rem;
+    .section-content .content-image {
+      min-width: auto;
+      width: 100%;
+    }
+    p.b-text {
+      font-size: 16px;
+    }
   }
   #form .title,
   #form form {
@@ -1344,7 +1352,7 @@ form {
       }
     }
   }
-  section .section-content .content-image .buttonset button.cta{
+  section .section-content .content-image .buttonset button.cta {
     font-size: 12px;
   }
 }

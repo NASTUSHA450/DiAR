@@ -87,7 +87,7 @@ img {
   border-radius: 16px; }
 
 input:focus,
-textarea:focus {
+input {
   outline-width: 0;
   color: white; }
 
@@ -789,7 +789,8 @@ form {
   section#patients .section-content .content p {
     margin-top: 1rem; }
   #preview .preview-content {
-    width: 100%; }
+    width: 100%;
+    padding-bottom: 2.3rem; }
   #types .container {
     padding-bottom: 2.5rem; }
     #types .container .carousel {
@@ -859,8 +860,13 @@ form {
     font-size: 30px; }
     #preview .preview-content h1 span {
       font-size: 30px; }
-  section p.b-text {
-    font-size: 16px; }
+  section {
+    padding: 2.3rem 1rem 0 1rem; }
+    section .section-content .content-image {
+      min-width: auto;
+      width: 100%; }
+    section p.b-text {
+      font-size: 16px; }
   #form .title,
   #form form {
     width: 100%; }
