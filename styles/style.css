@@ -236,10 +236,10 @@ menu {
 
 #preview {
   position: relative;
-  background-image: url("/img/preview-background.jpg");
+  background-image: url("./img/preview-background.jpg");
   margin-top: 10.75rem; }
   #preview section {
-    background-image: url("/img/preview-background-img.png"); }
+    background-image: url("./img/preview-background-img.png"); }
   #preview .preview-content {
     width: 50%;
     padding-bottom: 4rem; }
@@ -252,7 +252,7 @@ menu {
     #preview .preview-content .video {
       width: 320px;
       height: 200px;
-      background-image: url("/img/video.png");
+      background-image: url("./img/video.png");
       align-items: end;
       margin: 2.8rem 0; }
       #preview .preview-content .video .play {
@@ -316,15 +316,15 @@ section .section-content {
       background-repeat: no-repeat;
       background-position: center center; }
     section .section-content .content-image.whatIs::before {
-      background-image: url("/img//info/whatis-image.png"); }
+      background-image: url("./img//info/whatis-image.png"); }
     section .section-content .content-image.patients::before {
-      background-image: url("/img//info/patients-image.png"); }
+      background-image: url("./img//info/patients-image.png"); }
     section .section-content .content-image.patients .buttonset button.cta {
       width: 50%; }
     section .section-content .content-image.norm {
       margin-bottom: 5rem; }
       section .section-content .content-image.norm::before {
-        background-image: url("/img/info/norm-image.png");
+        background-image: url("./img/info/norm-image.png");
         background-position: top 20% center; }
       section .section-content .content-image.norm img:last-of-type {
         position: absolute;
@@ -386,7 +386,7 @@ section .section-content {
 
 #results {
   margin-top: 6%;
-  background-image: url("/img/sections/results-bg.png"); }
+  background-image: url("./img/sections/results-bg.png"); }
   #results section {
     padding-top: 0; }
     #results section h2 {
@@ -431,10 +431,10 @@ section .section-content {
           height: 39px;
           width: 39px; }
         #results section .container .carousel .arrow.next {
-          background-image: url("/img/next.svg"); }
+          background-image: url("./img/next.svg"); }
         #results section .container .carousel .arrow.previous {
           margin-right: 5rem;
-          background-image: url("/img/prev.svg"); }
+          background-image: url("./img/prev.svg"); }
 
 #types .container {
   margin: 0 auto;
@@ -454,15 +454,15 @@ section .section-content {
         height: 39px;
         width: 39px; }
       #types .container .carousel .arrow.next {
-        background-image: url("/img/next.svg"); }
+        background-image: url("./img/next.svg"); }
         #types .container .carousel .arrow.next.disabled {
-          background-image: url("/img/next-dis.svg");
+          background-image: url("./img/next-dis.svg");
           cursor: default; }
       #types .container .carousel .arrow.previous {
         right: 9rem;
-        background-image: url("/img/prev.svg"); }
+        background-image: url("./img/prev.svg"); }
         #types .container .carousel .arrow.previous.disabled {
-          background-image: url("/img/prev-dis.svg");
+          background-image: url("./img/prev-dis.svg");
           cursor: default; }
     #types .container .carousel ol.indicators {
       list-style: none;
@@ -639,7 +639,7 @@ section .section-content {
     display: block; }
   @media screen and (max-height: 775px) {
     #mobileMenu {
-      height: 775px;
+      height: 600px;
       overflow-y: scroll; }
       #mobileMenu::-webkit-scrollbar {
         display: none; } }
@@ -824,15 +824,15 @@ form {
         right: 30%;
         top: auto; }
         #types .container .carousel .arrow.next {
-          background-image: url("/img/next.svg"); }
+          background-image: url("./img/next.svg"); }
           #types .container .carousel .arrow.next.disabled {
-            background-image: url("/img/next-dis.svg");
+            background-image: url("./img/next-dis.svg");
             cursor: default; }
         #types .container .carousel .arrow.previous {
           right: 60%;
-          background-image: url("/img/prev.svg"); }
+          background-image: url("./img/prev.svg"); }
           #types .container .carousel .arrow.previous.disabled {
-            background-image: url("/img/prev-dis.svg");
+            background-image: url("./img/prev-dis.svg");
             cursor: default; }
       #types .container .carousel ol.indicators {
         top: auto !important;
@@ -954,9 +954,9 @@ form {
 
 @media screen and (max-width: 574px) {
   #preview {
-    background-image: url("/img/preview-background-mob.jpg"); }
+    background-image: url("./img/preview-background-mob.jpg"); }
     #preview section {
-      background-image: url("/img/preview-background-img-mob.png"); }
+      background-image: url("./img/preview-background-img-mob.png"); }
     #preview .video {
       margin-top: 12rem; }
     #preview .buttonset {

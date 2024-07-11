@@ -295,11 +295,11 @@ menu {
 
 #preview {
   position: relative;
-  background-image: url("/img/preview-background.jpg");
+  background-image: url("./img/preview-background.jpg");
   margin-top: 10.75rem;
 
   section {
-    background-image: url("/img/preview-background-img.png");
+    background-image: url("./img/preview-background-img.png");
   }
 
   .preview-content {
@@ -319,7 +319,7 @@ menu {
     .video {
       width: 320px;
       height: 200px;
-      background-image: url("/img/video.png");
+      background-image: url("./img/video.png");
       align-items: end;
       margin: 2.8rem 0;
 
@@ -408,12 +408,12 @@ section {
       }
 
       &.whatIs::before {
-        background-image: url("/img//info/whatis-image.png");
+        background-image: url("./img//info/whatis-image.png");
       }
 
       &.patients {
         &::before {
-          background-image: url("/img//info/patients-image.png");
+          background-image: url("./img//info/patients-image.png");
         }
 
         .buttonset button.cta {
@@ -424,7 +424,7 @@ section {
       &.norm {
         margin-bottom: 5rem;
         &::before {
-          background-image: url("/img/info/norm-image.png");
+          background-image: url("./img/info/norm-image.png");
           background-position: top 20% center;
         }
 
@@ -524,7 +524,7 @@ section {
 
 #results {
   margin-top: 6%;
-  background-image: url("/img/sections/results-bg.png");
+  background-image: url("./img/sections/results-bg.png");
   section {
     padding-top: 0;
 
@@ -592,12 +592,12 @@ section {
           }
 
           &.next {
-            background-image: url("/img/next.svg");
+            background-image: url("./img/next.svg");
           }
 
           &.previous {
             margin-right: 5rem;
-            background-image: url("/img/prev.svg");
+            background-image: url("./img/prev.svg");
           }
         }
       }
@@ -629,20 +629,20 @@ section {
         }
 
         &.next {
-          background-image: url("/img/next.svg");
+          background-image: url("./img/next.svg");
 
           &.disabled {
-            background-image: url("/img/next-dis.svg");
+            background-image: url("./img/next-dis.svg");
             cursor: default;
           }
         }
 
         &.previous {
           right: 9rem;
-          background-image: url("/img/prev.svg");
+          background-image: url("./img/prev.svg");
 
           &.disabled {
-            background-image: url("/img/prev-dis.svg");
+            background-image: url("./img/prev-dis.svg");
             cursor: default;
           }
         }
@@ -1168,20 +1168,20 @@ form {
           right: 30%;
           top: auto;
           &.next {
-            background-image: url("/img/next.svg");
+            background-image: url("./img/next.svg");
 
             &.disabled {
-              background-image: url("/img/next-dis.svg");
+              background-image: url("./img/next-dis.svg");
               cursor: default;
             }
           }
 
           &.previous {
             right: 60%;
-            background-image: url("/img/prev.svg");
+            background-image: url("./img/prev.svg");
 
             &.disabled {
-              background-image: url("/img/prev-dis.svg");
+              background-image: url("./img/prev-dis.svg");
               cursor: default;
             }
           }
@@ -1362,10 +1362,10 @@ form {
 
 @media screen and (max-width: 574px) {
   #preview {
-    background-image: url("/img/preview-background-mob.jpg");
+    background-image: url("./img/preview-background-mob.jpg");
 
     section {
-      background-image: url("/img/preview-background-img-mob.png");
+      background-image: url("./img/preview-background-img-mob.png");
     }
 
     .video {
