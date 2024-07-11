@@ -6,7 +6,10 @@ body {
   background-color: #27282f;
   color: white;
   font-family: "Montserrat", sans-serif;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  overflow-y: scroll; }
+  body::-webkit-scrollbar {
+    display: none; }
 
 .main-container {
   width: 100%; }
@@ -146,7 +149,8 @@ ol.list-dashed {
   .search input {
     background-color: transparent;
     border: none;
-    color: white; }
+    color: white;
+    width: 100%; }
     .search input::-webkit-input-placeholder {
       color: white;
       opacity: 0.8; }
@@ -167,6 +171,14 @@ hr {
   width: 95%; }
   hr.hr-menu {
     margin-top: 0; }
+
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  background-color: #27282f; }
 
 menu,
 section {
@@ -224,7 +236,8 @@ menu {
 
 #preview {
   position: relative;
-  background-image: url("/img/preview-background.jpg"); }
+  background-image: url("/img/preview-background.jpg");
+  margin-top: 10.75rem; }
   #preview section {
     background-image: url("/img/preview-background-img.png"); }
   #preview .preview-content {
@@ -609,18 +622,25 @@ section .section-content {
   top: 0;
   left: 0;
   width: 100%;
-  height: 90%;
   margin-top: 5.5rem;
   background: #32333a;
-  display: none; }
-  #mobileMenu ul {
-    margin-right: 10rem; }
-    #mobileMenu ul li {
-      margin-bottom: 1rem; }
-  #mobileMenu .menu-contact {
-    margin-top: 5rem; }
+  display: none;
+  height: 100vh; }
+  #mobileMenu menu {
+    background: #32333a;
+    width: 92%;
+    overflow-y: scroll !important; }
+    #mobileMenu menu ul {
+      margin-right: 10rem; }
+      #mobileMenu menu ul li {
+        margin-bottom: 1rem; }
+    #mobileMenu menu .menu-contact {
+      margin-top: 20%; }
   #mobileMenu.open-menu {
     display: block; }
+  @media screen and (max-height: 775px) {
+    #mobileMenu menu .menu-contact {
+      margin-top: 10%; } }
 
 #modal {
   background: #27282f;
@@ -745,8 +765,7 @@ form {
       margin-top: 2rem;
       width: 100%; }
 
-#mobileMenu .wrap,
-#mobileMenu .menu-contact {
+#mobileMenu .wrap {
   flex-wrap: wrap; }
 
 @media screen and (max-width: 1300px) {
@@ -765,7 +784,9 @@ form {
   menu #burger {
     display: block; }
   section .section-content .content-image {
-    min-width: 400px; } }
+    min-width: 400px; }
+  #preview {
+    margin-top: 5.625rem; } }
 
 @media screen and (max-width: 992px) {
   .title {
@@ -854,6 +875,12 @@ form {
           margin-bottom: 2rem; } }
 
 @media screen and (max-width: 768px) {
+  #mobileMenu menu {
+    padding: 1.5rem; }
+    #mobileMenu menu .menu-contact {
+      flex-wrap: wrap; }
+      #mobileMenu menu .menu-contact a {
+        margin-bottom: 2rem; }
   #preview .preview-content p {
     font-size: 14px; }
   #preview .preview-content h1 {
@@ -944,4 +971,9 @@ form {
       display: block !important; }
   #types #tabs1 ul.tabs-btns,
   #types #tabs ul.tabs-btns {
-    justify-content: center !important; } }
+    justify-content: center !important; }
+  #mobileMenu menu .menu-contact {
+    justify-content: center !important; }
+    #mobileMenu menu .menu-contact a.cta.blue {
+      width: 100%;
+      text-align: center; } }

@@ -25,7 +25,7 @@
 </head>
 
 <body>
-    <div class="flex flex-col align-center">
+    <div id="navbar" class="flex flex-col align-center">
         <menu class="top-menu flex justify-between align-center f-14">
             <div class="language"><a href="#">EN</a> <span>/</span> <a href="#" class="active">RU</a></div>
             <nav>
@@ -102,6 +102,48 @@
                 </svg>
             </button>
         </menu>
+        <div id="mobileMenu">
+            <menu>
+                <div class="search mobile">
+                    <input type="text" placeholder="Поиск по каталогу"><svg width="17" height="16" viewBox="0 0 17 16"
+                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M11 7C11 9.90359 8.84829 12 6.5 12C4.15171 12 2 9.90359 2 7C2 4.09641 4.15171 2 6.5 2C8.84829 2 11 4.09641 11 7ZM11.106 11.9391C9.92898 13.2121 8.29993 14 6.5 14C2.91015 14 0 10.866 0 7C0 3.13401 2.91015 0 6.5 0C10.0899 0 13 3.13401 13 7C13 8.18574 12.7262 9.30262 12.2431 10.2813L15.8398 13.3354C16.2608 13.6928 16.3186 14.3292 15.969 14.7567C15.6193 15.1842 14.9946 15.241 14.5736 14.8835L11.106 11.9391Z"
+                            fill="#A4EBF4" fill-opacity="0.8" />
+                    </svg>
+                </div>
+                <div class="flex justify wrap">
+                    <ul class="list-none">
+                        <li class="mobile-menu-link"><a href="#">О компании</a></li>
+                        <li class="mobile-menu-link"><a href="#">Каталог</a></li>
+                        <li class="mobile-menu-link"><a href="#">Новости</a></li>
+                        <li class="mobile-menu-link"><a href="#">Реализованные проекты</a></li>
+                        <li class="mobile-menu-link"><a href="#">Контакты</a></li>
+                        <li class="mobile-menu-link"><a href="#">Доставка и оплата</a></li>
+                    </ul>
+                    <ul class="list-none">
+                        <li class="mobile-menu-link"><a href="#">Гарантия</a></li>
+                        <li class="mobile-menu-link"><a href="#">Медицинское оборудование</a></li>
+                        <li class="mobile-menu-link"><a href="#">Ветеринарное оборудование</a></li>
+                        <li class="mobile-menu-link"><a href="#">Трейд-ин</a></li>
+                        <li class="mobile-menu-link"><a href="#">Сервис</a></li>
+                    </ul>
+                </div>
+                <div class="menu-contact flex justify-between align-center">
+                    <a href="#" class="email"><svg width="16" height="11" viewBox="0 0 16 11" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M2 1H13C13.5523 1 14 1.44772 14 2V3.88459L8 6.45602L1.19696 3.54043C1.13266 3.51287 1.06579 3.49984 1 3.49987V2C1 1.44772 1.44772 1 2 1ZM1 4.54398V9C1 9.55229 1.44772 10 2 10H13C13.5523 10 14 9.55228 14 9V4.97256L8.27574 7.42581C8.09966 7.50127 7.90034 7.50127 7.72426 7.42581L1 4.54398ZM15 4.54398V9C15 10.1046 14.1046 11 13 11H2C0.89543 11 0 10.1046 0 9V2C0 0.895431 0.895431 0 2 0H13C14.1046 0 15 0.895431 15 2V3.49987C15.1939 3.49996 15.3784 3.61352 15.4596 3.80304C15.5684 4.05686 15.4508 4.35079 15.197 4.45957L15 4.54398Z"
+                                fill="#71C3F2" />
+                        </svg> sales@medical112.ru</a>
+                    <a href="tel:+78007758612" class="phone bold">+8 (800) 775-86-12</a>
+                    <a href="#modal" rel="modal:open" class="cta blue">Оставить заявку</a>
+                </div>
+    
+            </menu>
+    
+    
+        </div>
     </div>
     <div class="flex justify-center backgound-set" id="preview">
         <section class="backgound-set">
@@ -673,50 +715,6 @@
             </div>
         </section>
     </div>
-
-    <div id="mobileMenu">
-        <menu>
-            <div class="search mobile">
-                <input type="text" placeholder="Поиск по каталогу"><svg width="17" height="16" viewBox="0 0 17 16"
-                    fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd"
-                        d="M11 7C11 9.90359 8.84829 12 6.5 12C4.15171 12 2 9.90359 2 7C2 4.09641 4.15171 2 6.5 2C8.84829 2 11 4.09641 11 7ZM11.106 11.9391C9.92898 13.2121 8.29993 14 6.5 14C2.91015 14 0 10.866 0 7C0 3.13401 2.91015 0 6.5 0C10.0899 0 13 3.13401 13 7C13 8.18574 12.7262 9.30262 12.2431 10.2813L15.8398 13.3354C16.2608 13.6928 16.3186 14.3292 15.969 14.7567C15.6193 15.1842 14.9946 15.241 14.5736 14.8835L11.106 11.9391Z"
-                        fill="#A4EBF4" fill-opacity="0.8" />
-                </svg>
-            </div>
-            <div class="flex justify wrap">
-                <ul class="list-none">
-                    <li><a href="#">О компании</a></li>
-                    <li><a href="#">Каталог</a></li>
-                    <li><a href="#">Новости</a></li>
-                    <li><a href="#">Реализованные проекты</a></li>
-                    <li><a href="#">Контакты</a></li>
-                    <li><a href="#">Доставка и оплата</a></li>
-                </ul>
-                <ul class="list-none">
-                    <li><a href="#">Гарантия</a></li>
-                    <li><a href="#">Медицинское оборудование</a></li>
-                    <li><a href="#">Ветеринарное оборудование</a></li>
-                    <li><a href="#">Трейд-ин</a></li>
-                    <li><a href="#">Сервис</a></li>
-                </ul>
-            </div>
-            <div class="menu-contact flex justify-between align-center">
-                <a href="#" class="email"><svg width="16" height="11" viewBox="0 0 16 11" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M2 1H13C13.5523 1 14 1.44772 14 2V3.88459L8 6.45602L1.19696 3.54043C1.13266 3.51287 1.06579 3.49984 1 3.49987V2C1 1.44772 1.44772 1 2 1ZM1 4.54398V9C1 9.55229 1.44772 10 2 10H13C13.5523 10 14 9.55228 14 9V4.97256L8.27574 7.42581C8.09966 7.50127 7.90034 7.50127 7.72426 7.42581L1 4.54398ZM15 4.54398V9C15 10.1046 14.1046 11 13 11H2C0.89543 11 0 10.1046 0 9V2C0 0.895431 0.895431 0 2 0H13C14.1046 0 15 0.895431 15 2V3.49987C15.1939 3.49996 15.3784 3.61352 15.4596 3.80304C15.5684 4.05686 15.4508 4.35079 15.197 4.45957L15 4.54398Z"
-                            fill="#71C3F2" />
-                    </svg> sales@medical112.ru</a>
-                <a href="tel:+78007758612" class="phone bold">+8 (800) 775-86-12</a>
-                <a href="#modal" rel="modal:open" class="cta blue">Оставить заявку</a>
-            </div>
-
-        </menu>
-
-
-    </div>
-
     <div id="dialog-modal" Title="Youtube Video" style="display:none">
         <object width="550" height="385">
             <param name="movie" value="http://www.youtube.com/v/DIuXtsaUDmM?

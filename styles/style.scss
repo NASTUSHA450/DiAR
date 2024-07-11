@@ -13,6 +13,10 @@ body {
   color: white;
   font-family: "Montserrat", sans-serif;
   overflow-x: hidden;
+  overflow-y: scroll;
+  &::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 .main-container {
@@ -190,7 +194,7 @@ ol {
     background-color: transparent;
     border: none;
     color: white;
-
+    width: 100%;
     &::-webkit-input-placeholder {
       color: white;
       opacity: 0.8;
@@ -220,7 +224,14 @@ hr {
     margin-top: 0;
   }
 }
-
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  background-color: #27282f;
+}
 menu,
 section {
   padding: 4rem 3.5rem 0 3.5rem;
@@ -285,6 +296,7 @@ menu {
 #preview {
   position: relative;
   background-image: url("/img/preview-background.jpg");
+  margin-top: 10.75rem;
 
   section {
     background-image: url("/img/preview-background-img.png");
@@ -853,25 +865,37 @@ section {
   top: 0;
   left: 0;
   width: 100%;
-  height: 90%;
   margin-top: 5.5rem;
   background: #32333a;
   display: none;
+  height: 100vh;
 
-  ul {
-    li {
-      margin-bottom: 1rem;
+  menu {
+    background: #32333a;
+    width: 92%;
+    overflow-y: scroll !important;
+    ul {
+      li {
+        margin-bottom: 1rem;
+      }
+
+      margin-right: 10rem;
     }
-
-    margin-right: 10rem;
-  }
-
-  .menu-contact {
-    margin-top: 5rem;
+    .menu-contact {
+      margin-top: 20%;
+    }
   }
 
   &.open-menu {
     display: block;
+  }
+  @media screen and (max-height: 775px) {
+    
+    menu {
+      .menu-contact {
+        margin-top: 10%;
+      }
+    }
   }
 }
 
@@ -1056,8 +1080,7 @@ form {
   }
 }
 
-#mobileMenu .wrap,
-#mobileMenu .menu-contact {
+#mobileMenu .wrap {
   flex-wrap: wrap;
 }
 
@@ -1076,7 +1099,6 @@ form {
   menu.top-menu {
     display: none;
   }
-
   menu {
     nav,
     .search:not(.mobile) {
@@ -1090,6 +1112,9 @@ form {
 
   section .section-content .content-image {
     min-width: 400px;
+  }
+  #preview {
+    margin-top: 5.625rem;
   }
 }
 
@@ -1233,6 +1258,15 @@ form {
 }
 
 @media screen and (max-width: 768px) {
+  #mobileMenu menu {
+    padding: 1.5rem;
+    .menu-contact {
+      flex-wrap: wrap;
+      a {
+        margin-bottom: 2rem;
+      }
+    }
+  }
   #preview {
     .preview-content {
       p {
@@ -1377,5 +1411,12 @@ form {
   #types #tabs1 ul.tabs-btns,
   #types #tabs ul.tabs-btns {
     justify-content: center !important;
+  }
+  #mobileMenu menu .menu-contact {
+    justify-content: center !important;
+    a.cta.blue {
+      width: 100%;
+      text-align: center;
+    }
   }
 }
