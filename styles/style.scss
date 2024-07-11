@@ -869,11 +869,9 @@ section {
   background: #32333a;
   display: none;
   height: 100vh;
-
   menu {
     background: #32333a;
     width: 92%;
-    overflow-y: scroll !important;
     ul {
       li {
         margin-bottom: 1rem;
@@ -890,11 +888,10 @@ section {
     display: block;
   }
   @media screen and (max-height: 775px) {
-    
-    menu {
-      .menu-contact {
-        margin-top: 10%;
-      }
+    height: 600px;
+    overflow-y: scroll;
+    &::-webkit-scrollbar {
+      display: none;
     }
   }
 }
@@ -1200,16 +1197,20 @@ form {
 
     #tabs1,
     #tabs {
-      #tabs-1,#tabs-2,#tabs-3,#tabs-4,#tabs-5,#tabs-6{
+      #tabs-1,
+      #tabs-2,
+      #tabs-3,
+      #tabs-4,
+      #tabs-5,
+      #tabs-6 {
         display: flex;
         flex-flow: column;
       }
-      .tab-content{
+      .tab-content {
         position: relative;
         margin-top: 0;
-        .content-block{
+        .content-block {
           width: 100%;
-          
         }
         h4 {
           margin-bottom: 1rem;
@@ -1258,6 +1259,9 @@ form {
 @media screen and (max-width: 768px) {
   #mobileMenu menu {
     padding: 1.5rem;
+    ul {
+      margin-right: 1.5rem;
+    }
     .menu-contact {
       flex-wrap: wrap;
       a {
@@ -1404,17 +1408,18 @@ form {
         display: block !important;
       }
     }
+    ul.tabs-btns {
+      justify-content: center !important;
+    }
   }
-
-  #types #tabs1 ul.tabs-btns,
-  #types #tabs ul.tabs-btns {
-    justify-content: center !important;
-  }
-  #mobileMenu menu .menu-contact {
-    justify-content: center !important;
-    a.cta.blue {
-      width: 100%;
-      text-align: center;
+  #mobileMenu menu {
+    width: 88%;
+    .menu-contact {
+      justify-content: center !important;
+      a.cta.blue {
+        width: 100%;
+        text-align: center;
+      }
     }
   }
 }

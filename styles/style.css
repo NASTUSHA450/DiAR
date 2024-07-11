@@ -628,8 +628,7 @@ section .section-content {
   height: 100vh; }
   #mobileMenu menu {
     background: #32333a;
-    width: 92%;
-    overflow-y: scroll !important; }
+    width: 92%; }
     #mobileMenu menu ul {
       margin-right: 10rem; }
       #mobileMenu menu ul li {
@@ -639,8 +638,11 @@ section .section-content {
   #mobileMenu.open-menu {
     display: block; }
   @media screen and (max-height: 775px) {
-    #mobileMenu menu .menu-contact {
-      margin-top: 10%; } }
+    #mobileMenu {
+      height: 775px;
+      overflow-y: scroll; }
+      #mobileMenu::-webkit-scrollbar {
+        display: none; } }
 
 #modal {
   background: #27282f;
@@ -836,7 +838,12 @@ form {
         top: auto !important;
         bottom: 0.5rem;
         right: 45% !important; }
-  #types #tabs1 #tabs-1, #types #tabs1 #tabs-2, #types #tabs1 #tabs-3, #types #tabs1 #tabs-4, #types #tabs1 #tabs-5, #types #tabs1 #tabs-6,
+  #types #tabs1 #tabs-1,
+  #types #tabs1 #tabs-2,
+  #types #tabs1 #tabs-3,
+  #types #tabs1 #tabs-4,
+  #types #tabs1 #tabs-5,
+  #types #tabs1 #tabs-6,
   #types #tabs #tabs-1,
   #types #tabs #tabs-2,
   #types #tabs #tabs-3,
@@ -882,6 +889,8 @@ form {
 @media screen and (max-width: 768px) {
   #mobileMenu menu {
     padding: 1.5rem; }
+    #mobileMenu menu ul {
+      margin-right: 1.5rem; }
     #mobileMenu menu .menu-contact {
       flex-wrap: wrap; }
       #mobileMenu menu .menu-contact a {
@@ -977,8 +986,10 @@ form {
   #types #tabs1 ul.tabs-btns,
   #types #tabs ul.tabs-btns {
     justify-content: center !important; }
-  #mobileMenu menu .menu-contact {
-    justify-content: center !important; }
-    #mobileMenu menu .menu-contact a.cta.blue {
-      width: 100%;
-      text-align: center; } }
+  #mobileMenu menu {
+    width: 88%; }
+    #mobileMenu menu .menu-contact {
+      justify-content: center !important; }
+      #mobileMenu menu .menu-contact a.cta.blue {
+        width: 100%;
+        text-align: center; } }
