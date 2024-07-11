@@ -836,17 +836,22 @@ form {
         top: auto !important;
         bottom: 0.5rem;
         right: 45% !important; }
+  #types #tabs1 #tabs-1, #types #tabs1 #tabs-2, #types #tabs1 #tabs-3, #types #tabs1 #tabs-4, #types #tabs1 #tabs-5, #types #tabs1 #tabs-6,
+  #types #tabs #tabs-1,
+  #types #tabs #tabs-2,
+  #types #tabs #tabs-3,
+  #types #tabs #tabs-4,
+  #types #tabs #tabs-5,
+  #types #tabs #tabs-6 {
+    display: flex;
+    flex-flow: column; }
   #types #tabs1 .tab-content,
   #types #tabs .tab-content {
-    flex-flow: column;
     position: relative;
     margin-top: 0; }
     #types #tabs1 .tab-content .content-block,
     #types #tabs .tab-content .content-block {
       width: 100%; }
-    #types #tabs1 .tab-content p.content-block,
-    #types #tabs .tab-content p.content-block {
-      margin-top: 1.7rem; }
     #types #tabs1 .tab-content h4,
     #types #tabs .tab-content h4 {
       margin-bottom: 1rem;
